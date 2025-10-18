@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>DevDetective</h1>
+             <div class="btn-mode">
+                <div class="mode-text">DARK</div>
+                <img src="./images/moon-icon.svg" class="mode-icon">
+             </div>
+        </div>
+
+        <div class="app">
+            <div class="search-form-container">
+                <input type="search" placeholder="Enter a GitHub username..." class="searchBox" required>
+                <div class="error">
+                    <p id="no-results">no search results</p>
+                </div>
+                <button class="btn" SearchBtn>Search</button>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="" alt="" class="profilepic">
+                    <div class="adjustdata">
+                    <div class="profile-details">
+                        <div class="name"></div>
+                        <a href="#" id="username"></a>
+                        
+                    </div>
+                    <div class="date"></div>
+                    </div>
+                    
+
+                </div>
+
+                <p class="bio"></p>
+
+                <div class="profile-stats-wrapper">
+                    <div class="stat">
+                        <div class="stat-title">Repos</div>
+                        <div class="stat-value" Repos></div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-title">Followers</div>
+                        <div class="stat-value" Followers></div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-title">Following</div>
+                        <div class="stat-value" Following></div>
+                    </div>
+                </div>
+
+                <div class="profile-bottom-wrapper">
+                    <div class="profile-info">
+                        <div class="bottom-icons"><img src="./images/location-icon.svg" alt=""></div>
+                        <p id="location"></p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottom-icons"><img src="./images/website-icon.svg" alt=""></div>
+                        <p id="page"></p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottom-icons"><img src="./images/twitter-icon.svg" alt=""></div>
+                        <p id="twitter"></p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottom-icons"><img src="./images/company-icon.svg" alt=""></div>
+                        <p id="company"></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
